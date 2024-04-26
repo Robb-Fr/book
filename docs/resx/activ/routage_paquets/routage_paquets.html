@@ -224,7 +224,6 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../../rep-info/activ/index.html">Activités</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../rep-info/activ/magie_binaire.html">Magie binaire</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../rep-info/activ/encoder_images.html">Images numériques</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../rep-info/activ/numerisation_images_var.html">Images numériques - Variante</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../rep-info/activ/echantillonnage_new.html">Echantillonnage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../rep-info/activ/huffman.html">Compression et codage de Huffman</a></li>
 </ul>
@@ -236,7 +235,6 @@
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../../rep-info/support/index.html">Supports de cours</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../rep-info/support/numerisation-video.html">La numérisation des images</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../rep-info/support/son/visu-et-ecoute-son.html">Représentation du son</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../rep-info/support/shannon2.html">Second théorème de Shannon</a></li>
 </ul>
@@ -312,7 +310,6 @@
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../../enjx1/activ/index.html">Activités</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" role="switch" type="checkbox"/><label for="toctree-checkbox-18"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../enjx1/activ/encheres.html">Les enchères du web</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../enjx1/activ/donnees_reputation.html">Données et enjeux de réputation</a></li>
 </ul>
 </li>
 </ul>
@@ -443,147 +440,19 @@
         <article role="main">
           <section class="tex2jax_ignore mathjax_ignore" id="routage-et-paquets-sur-internet">
 <h1>Routage et paquets sur Internet<a class="headerlink" href="#routage-et-paquets-sur-internet" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Le but de cette activité de simulation humaine est de découvrir
-les deux éléments centraux de la transmission d’information sur internet
-suivants:</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Le but de cette activité est de découvrir, par la simulation, les deux éléments
+centraux de la transmission d’information sur internet suivants:</p>
 <ol class="simple">
 <li><p>le principe du routage sur internet, ou comment peut se mettre en place une
 procédure décentralisée qui permet de savoir par où acheminer l’information
 afin de pouvoir atteindre n’importe quel destinataire du réseau.</p></li>
-<li><p>le principe de la commutation par paquet, c’est à dire comment l’information
-est découpée en petits morceau pour l’envoi et reconstituée à l’arrivée.</p></li>
+<li><p>le principe de la commutation par paquet, c’est à dire comment l’information est découpée en petits morceau pour l’envoi et reconstituée à l’arrivée.</p></li>
 </ol>
-<div class="hint admonition">
-<p class="admonition-title">Notice</p>
-<ul class="simple">
-<li><p><strong>Thème</strong> : eg. <code class="docutils literal notranslate"><span class="pre">Réseau</span></code>, <code class="docutils literal notranslate"><span class="pre">routage</span></code></p></li>
-<li><p><strong>Niveau</strong> : <code class="docutils literal notranslate"><span class="pre">facile</span></code></p></li>
-<li><p><strong>Durée</strong> : 2 périodes</p></li>
-<li><p><strong>Objectifs pédagogiques</strong> :</p></li>
-<li><p><strong>Modalité</strong> : <code class="docutils literal notranslate"><span class="pre">débranché</span></code></p></li>
-<li><p><strong>Matériel</strong> : scotch de carrossier, billets ou post-its de
-trois couleurs différentes</p></li>
-<li><p><strong>Prérequis</strong> : les adresses IP</p></li>
-<li><p><strong>Notions fondamentales</strong> : table de routage, routage, TCP-IP, RIP</p></li>
-<li><p><strong>Taille du groupe</strong> : <code class="docutils literal notranslate"><span class="pre">demi-classe</span></code>  peut-être possible en classe entière mais plus difficile à gérer.</p></li>
-</ul>
-</div>
-<section id="deroulement">
-<h2>Déroulement<a class="headerlink" href="#deroulement" title="Lien permanent vers ce titre">¶</a></h2>
-<div class="table-wrapper"><table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p></p></th>
-<th class="head"><p>Durée</p></th>
-<th class="head"><p>Phase de l’activité</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><span class="xref std std-ref">Introduction</span></p></td>
-<td><p>5 min</p></td>
-<td><p>Introduction</p></td>
-</tr>
-<tr class="row-odd"><td><p><span class="xref std std-ref">Les tables de routage</span></p></td>
-<td><p>15 min</p></td>
-<td><p>Exercices</p></td>
-</tr>
-<tr class="row-even"><td><p><span class="xref std std-ref">Simulation de routage</span></p></td>
-<td><p>10 min</p></td>
-<td><p>Exploration</p></td>
-</tr>
-<tr class="row-odd"><td><p><span class="xref std std-ref">Routage dynamique</span></p></td>
-<td><p>15 min</p></td>
-<td><p>Exploration</p></td>
-</tr>
-<tr class="row-even"><td><p><span class="xref std std-ref">TCP-IP</span></p></td>
-<td><p>10 min</p></td>
-<td><p>Exploration</p></td>
-</tr>
-<tr class="row-odd"><td><p><span class="xref std std-ref">Simulation complète (facultatif)</span></p></td>
-<td><p>10 min</p></td>
-<td><p>Exploration</p></td>
-</tr>
-<tr class="row-even"><td><p><span class="xref std std-ref">Récapitulatif</span></p></td>
-<td><p>10 min</p></td>
-<td><p>Institutionnalisation</p></td>
-</tr>
-</tbody>
-</table></div>
 </section>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Lien permanent vers ce titre">¶</a></h2>
-<p>En quelques minutes, l’enseignant-e introduit le sujet du “fonctionnement d’Internet”, en interrogeant les élèves
-sur leurs préconceptions et en partant d’un exemple concret de consultation d’un site web, d’échange sur un
-réseau social, ou d’échange d’email. La discussion doit amener la notion d’étapes intermédiaires (par exemple
-l’antenne 4G, la borne wifi) et donc des routeurs. On peut illustrer le propos avec une carte des dorsales d’Internet.
-On indique qu’Internet peut être représenté par un graphe avec noeuds et arêtes.</p>
-</section>
-<section id="les-tables-de-routage">
-<h2>Les tables de routage<a class="headerlink" href="#les-tables-de-routage" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Le but de cette étape est d’amener la notion de table de routage par trois types d’exercices. Le premier consiste à
-remplir les tables de routage d’un graphe donné, le second à déduire le graphe à partir des tables de routage, et
-le troisième à déduire le chemin d’un message en n’ayant uniquement les tables de routage. Pour chaque exercice, le
-premier exemple est résolu en commun, et les suivants sont faits individuellement.</p>
-</section>
-<section id="simulation-de-routage">
-<h2>Simulation de routage<a class="headerlink" href="#simulation-de-routage" title="Lien permanent vers ce titre">¶</a></h2>
-<p>On procède ensuite la simulation d’un réseau. les élèves se disposent autour d’une grande table, ou assis-es de
-manière à n’être pas trop éloigné-e-s les uns des autres. Chaque élève est un routeur qui est connecté à environs
-trois autre routeurs. Les connections entre routeurs sont indiquées par des bandes de scotch carrossier sur la table
-ou par terre. Chaque élève reçoit sur paper une table de routage vide à trois colonnes
-(destination, interface, distance) sur laquelle il complète son numéro de routeur (donné par l’enseignant-e).</p>
-<p>Chaque élève nomme ensuite ses interfaces avec les lettres de l’alphabet, en inscrivant la lettre sur l’extrémité
-correspondante du scotch.</p>
-<p>Enfin, l’enseignant dessine au tableau le graphe du réseau simulé, en demandant aux élève à quelles sont leurs connexions.
-Les élèves sont ensuite invités à compléter leur table de routage à l’aide du graphe représenté au tableau. Pour vérifier
-que les tables de routage sont justes, l’enseignant fait circuler quelque messages dont il indique la destination. Si
-tous les messages arrivent à destination, les tables sont sans doute correctes, mais si certains message ne rejoignent
-pas leur destination, cela signifie qu’il y a des erreurs qu’il faut corriger.</p>
-</section>
-<section id="routage-dynamique">
-<h2>Routage dynamique<a class="headerlink" href="#routage-dynamique" title="Lien permanent vers ce titre">¶</a></h2>
-<p>On explique aux élèves que le routage a bien fonctioné, mais que pour remplir leur table, ils et elles ont pu s’aider du
-graphe dessiné au tableau. Dans la réalité, les routeurs n’ont pas une vision globale du réseau, ils peuvent uniquement
-communiquer avec leurs voisins. La question se pose donc de comment remplir sa table de routage sans représentation
-du graphe, mais en pouvant communiquer avec ses voisins directs.</p>
-<p>On débarasse le scotch et les tables de routage, et on redéfinit un nouveau réseau avec du scotch de carrossier
-et des tables de routage vides. Maintenant les élèves doivent remplir au crayon leur table de routage en ne pouvant échanger qu’avec leur
-voisin direct, il est interdit de se lever et de regarder les parties plus distantes du réseau. Ils savent combien de routeurs
-il y a et donc combien de lignes doivent être remplies dans leur table de routage.</p>
-<p>Les élèves arrivent généralement assez vitre à compléter les lignes concernant leurs voisins directs, puis doit émerger l’idée qu’on peut
-demander à ses voisins de partager les éléments de la table déjà remplis pour compléter sa propre table.</p>
-<p>Une fois que les élèves ont rempli leur table, on envoie quelque message sur le réseau pour voir s’ils sont correctement acheminé. Si c’est
-le cas, cela signifie que les élèves ont réussi, de manière collective et décentralisée, à organiser le routage des messages
-dans leur réseau, ce que font également les routeurs.</p>
-</section>
-<section id="tcp-ip">
-<h2>TCP-IP<a class="headerlink" href="#tcp-ip" title="Lien permanent vers ce titre">¶</a></h2>
-<p>On demande ensuite aux élèves d’écrire une phrase à destination d’un ou d’une camarade.
-On explique aux élèves que dans la pratique, les messages, par exemples des images ou des vidéos,
-sont souvent trop volumineux pour circuler d’un coup sur Internet. Il faut donc les envoyer par petits
-morceaux. Pour la phrase qu’il ont écrite, ils doivent l’envoyer mettant un mot par billet. Tout le monde
-envoie ses phrase en même temps, et on fait ensuite un bilan. Si tout se passe trop bien, on demande à chaque
-élève d’envoyer de la même manière une phrase (différente) à deux personnes différentes.
-Là, les élèves devraient se rendre compte que c’est compliqué de reconstituer les phrases. Ensemble, les élèves
-doivent se mettre d’accord pour trouver une solution à ce problème, qui sera sans doute d’indiquer l’expéditeur
-et de numéroter les billets pour pouvoir les reconstituer dans le bon ordre. On teste la solution pour se rendre
-compte que cela fonctionne. A ce moment l’enseignant annonce de la friture sur la ligne et supprime quelque billets
-en cours de transfert. Les élèves doivent trouver un moyen de garantir la transmission de tous les billets. L’idée
-d’un système de quittancement devrait émerger, et on fournit pour ceci des billets d’une autre couleurs. Les élèves
-testent leur système pendant que l’enseignant perturbe la transmission des messages dans un premier temps, puis des
-quittances dans un second temps.</p>
-</section>
-<section id="simulation-complete-facultatif">
-<h2>Simulation complète (facultatif)<a class="headerlink" href="#simulation-complete-facultatif" title="Lien permanent vers ce titre">¶</a></h2>
-<p>S’il reste suffisamment de temps et que les élèves sont suffisamment à l’aise,
-on peut simuler à la fois le routage des billets et les modifications du réseau, avec des billets d’une troisième couleur
-la communication des tables de vérités entre routeurs. L’enseignant joue à la fois le rôle d’émetteur et celui de perturbateur
-du réseau en coupant et ajoutant certaines lignes de communication entre les routeurs.</p>
-</section>
-<section id="institutionnalisation">
-<h2>Institutionnalisation<a class="headerlink" href="#institutionnalisation" title="Lien permanent vers ce titre">¶</a></h2>
-<p>En commun avec les élèves, l’enseignant reprend toute les principes vus pendant cette activité en les résumant et en y associant
-leur nom “technique”. Une possibilité est de le faire sous forme d’exercice sur papier dans lequel les élèves doivent relier une description
-du principe avec son nom.</p>
+<section id="id1">
+<h2><a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h2>
 </section>
 </section>
 
@@ -636,14 +505,8 @@ du principe avec son nom.</p>
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Routage et paquets sur Internet</a><ul>
-<li><a class="reference internal" href="#deroulement">Déroulement</a></li>
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
-<li><a class="reference internal" href="#les-tables-de-routage">Les tables de routage</a></li>
-<li><a class="reference internal" href="#simulation-de-routage">Simulation de routage</a></li>
-<li><a class="reference internal" href="#routage-dynamique">Routage dynamique</a></li>
-<li><a class="reference internal" href="#tcp-ip">TCP-IP</a></li>
-<li><a class="reference internal" href="#simulation-complete-facultatif">Simulation complète (facultatif)</a></li>
-<li><a class="reference internal" href="#institutionnalisation">Institutionnalisation</a></li>
+<li><a class="reference internal" href="#id1"></a></li>
 </ul>
 </li>
 </ul>
